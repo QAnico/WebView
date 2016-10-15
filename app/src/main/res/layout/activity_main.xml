@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lin.webview.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:text="放回"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/bt_return"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/textView_title" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/bt_refresh"
+            android:text="刷新"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_below="@+id/layout_top"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_top"></WebView>
+</RelativeLayout>
